@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		24943C98246073400054557E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943C97246073400054557E /* AppDelegate.swift */; };
 		24943C9A246073400054557E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943C99246073400054557E /* SceneDelegate.swift */; };
-		24943C9C246073400054557E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943C9B246073400054557E /* ViewController.swift */; };
 		24943C9F246073400054557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24943C9D246073400054557E /* Main.storyboard */; };
 		24943CA1246073440054557E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24943CA0246073440054557E /* Assets.xcassets */; };
 		24943CA4246073440054557E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24943CA2246073440054557E /* LaunchScreen.storyboard */; };
+		24943CAE2460757C0054557E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943CAD2460757C0054557E /* SecondViewController.swift */; };
+		24943CB0246075F70054557E /* TouchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943CAF246075F70054557E /* TouchCell.swift */; };
+		24943CB22460760D0054557E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943CB12460760D0054557E /* DataModel.swift */; };
+		24943CB6246077C60054557E /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943CB5246077C60054557E /* Protocol.swift */; };
+		24943CB8246084650054557E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24943CB7246084650054557E /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24943C94246073400054557E /* Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24943C97246073400054557E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24943C99246073400054557E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24943C9B246073400054557E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24943C9E246073400054557E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24943CA0246073440054557E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24943CA3246073440054557E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24943CA5246073440054557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24943CAD2460757C0054557E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controller/SecondViewController.swift; sourceTree = SOURCE_ROOT; };
+		24943CAF246075F70054557E /* TouchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchCell.swift; sourceTree = "<group>"; };
+		24943CB12460760D0054557E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = SOURCE_ROOT; };
+		24943CB5246077C60054557E /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Controller/Protocol.swift; sourceTree = SOURCE_ROOT; };
+		24943CB7246084650054557E /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = Controller/MainTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,11 @@
 		24943C8B246073400054557E = {
 			isa = PBXGroup;
 			children = (
-				24943C96246073400054557E /* Touch */,
+				24943CAB2460738A0054557E /* Model */,
+				24943CAC246073F80054557E /* View */,
+				24943C96246073400054557E /* Controller */,
+				24943CA0246073440054557E /* Assets.xcassets */,
+				24943CA5246073440054557E /* Info.plist */,
 				24943C95246073400054557E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +65,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24943C96246073400054557E /* Touch */ = {
+		24943C96246073400054557E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24943CB5246077C60054557E /* Protocol.swift */,
+				24943CB7246084650054557E /* MainTableViewController.swift */,
+				24943CAD2460757C0054557E /* SecondViewController.swift */,
+				24943CAF246075F70054557E /* TouchCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24943CAB2460738A0054557E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24943CB12460760D0054557E /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24943CAC246073F80054557E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				24943C97246073400054557E /* AppDelegate.swift */,
 				24943C99246073400054557E /* SceneDelegate.swift */,
-				24943C9B246073400054557E /* ViewController.swift */,
-				24943C9D246073400054557E /* Main.storyboard */,
-				24943CA0246073440054557E /* Assets.xcassets */,
 				24943CA2246073440054557E /* LaunchScreen.storyboard */,
-				24943CA5246073440054557E /* Info.plist */,
+				24943C9D246073400054557E /* Main.storyboard */,
 			);
-			path = Touch;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24943C9C246073400054557E /* ViewController.swift in Sources */,
+				24943CAE2460757C0054557E /* SecondViewController.swift in Sources */,
 				24943C98246073400054557E /* AppDelegate.swift in Sources */,
+				24943CB6246077C60054557E /* Protocol.swift in Sources */,
 				24943C9A246073400054557E /* SceneDelegate.swift in Sources */,
+				24943CB0246075F70054557E /* TouchCell.swift in Sources */,
+				24943CB22460760D0054557E /* DataModel.swift in Sources */,
+				24943CB8246084650054557E /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +232,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Tong;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -260,6 +293,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Tong;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -285,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Touch/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Touch/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
